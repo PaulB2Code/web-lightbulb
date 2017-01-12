@@ -4,7 +4,7 @@
   "description": "Smart Light Bulb Web App",
   "main": "index.js",
   "scripts": {
-    "start": "live-server web",
+    "start": "node web",
     "build": "node generate-service-worker.js",
     "deploy": "gh-pages -d web"
   },
@@ -28,5 +28,8 @@
     "gh-pages": "^0.11.0",
     "live-server": "1.0.0",
     "sw-precache": "^4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
