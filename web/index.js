@@ -10,6 +10,8 @@ app.get('/styles.css', function(req, res){
     res.sendFile(path.join(__dirname + '/styles.css'));
 });
 
+app.use(express.static('web'));
+
 app.get('/bulb.js', function(req, res){
     res.sendFile(path.join(__dirname + '/bulb.js'));
 });
